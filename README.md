@@ -22,3 +22,7 @@ Once the Feedback form the valid and submitted, the form will reset.
 
 Languages and Tools Used:-
 Twitter BOOTSTRAP , ANGULARJS, JAVASCRIPT, HTML5,CSS3, BOWER
+
+![bake about page](https://user-images.githubusercontent.com/25843455/28213495-e0ec8c22-68c3-11e7-85f6-592e981dbbae.png)
+![bake contact](https://user-images.githubusercontent.com/25843455/28213496-e0f97522-68c3-11e7-9020-800b3bcaa57d.png)
+![bake home page](https://user-images.githubusercontent.com/25843455/28213497-e0fddfea-68c3-11e7-9f56-582b298f53e1.png)
