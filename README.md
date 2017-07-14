@@ -36,3 +36,7 @@ Contact.html
 
 Home.html
 ![bake home page](https://user-images.githubusercontent.com/25843455/28213497-e0fddfea-68c3-11e7-9f56-582b298f53e1.png)
+
+
+Note:
+Please run this application in Mozilla Firefox
