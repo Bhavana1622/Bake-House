@@ -1,0 +1,92 @@
+
+
+<!---Start of Jumbotron---->
+<header class="jumbotron">
+<div class="row row-header">
+	<div class="col-xs-12 col-sm-8">
+		<h1>Baking House</h1>
+		<p style="padding: 30px;"></p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="col-xs-12 col-sm-2">
+	<p style="padding-top: 30px;"></p>
+		<img src="image/logo.jpg" style="width:170px;" class="img-circle">
+	</div>
+	</div>
+</header>
+<!---End of Jumbotron---->
+
+
+
+
+<div class="container-fluid " ng-controller="homeCtrl">
+<!--PromoDish---->
+<div class="row row-content">
+<div class="col-xs-12 col-sm-3 col-sm-push-2">
+	<h4>Newly Added Special's</h4>
+</div>
+	<div class="col-sm-6 col-sm-push-1 col-xs-12">
+		<div class="media" ng-repeat = "pro in promodish" >
+			<div class="media-left">
+				<img src="{{pro.image}}"  style="width: 130px;" class="media-object img-thumbnail" >
+			</div>
+			<div class="media-body">
+				<h2 class="media-heading">{{pro.promoname | uppercase}} <span class="label label-danger">{{pro.label}}</span></h2>
+				<p>{{pro.description}}</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row row-content">
+<!--/discount---->
+	<div class="col-xs-12 col-sm-3 col-sm-push-9">
+		<h4>Discount's on Bake Mac Burgers</h4>
+	</div>
+	<div class="col-xs-12 col-sm-7 col-sm-pull-1">
+		<div class="media"  >
+			<div class="media-left">
+
+				<img src="{{discount.image}}"  style="width: 140px;" class="media-object img-thumbnail" >
+			</div>
+			<div class="media-body">
+				<h2 class="media-heading">{{discount.name }}<b class="badge ">${{discount.price}}</b> <span class="label label-warning">{{discount.label}}</span></h2>
+				<p>{{discount.description}}</p>
+
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="row row-content">
+<!---Chef---->
+	<div class="col-xs-12 col-sm-3 col-sm-push-2">
+		<h4>Michelin Star Chefs</h4>
+	</div>
+	<div class="col-xs-12 col-sm-7 col-sm-push-1">
+		<div class="media" ng-repeat = "c in chef" >
+			<div class="media-left">
+				<img src="{{c.image}}"  style="width: 200px;" class="media-object img-thumbnail" >
+			</div>
+			<div class="media-body">
+				<h2 class="media-heading">{{c.name | uppercase}}</h2>
+				<span class="label label-success label-lg">{{c.designation}}</span>
+				<p>{{c.description}}</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+

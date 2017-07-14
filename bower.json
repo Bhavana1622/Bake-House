@@ -1,0 +1,27 @@
+{
+  "name": "sample",
+  "description": "angular js testing",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "testing"
+  ],
+  "authors": [
+    "bhavana shenai"
+  ],
+  "license": "BSS",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular-route": "^1.6.5",
+    "angular-ui-router": "^1.0.5"
+  }
+}

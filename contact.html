@@ -1,0 +1,58 @@
+
+
+
+
+<div class="container-fluid "  >
+
+<div class="row" ng-controller="contactCtrl">
+
+<h1 class="text-center " style="padding-top: 70px;" >Feedback Form</h1>
+
+<form class="form-horizontal" name="myForm" style="padding-top: 70px;" ng-submit="submission(feedback)" novalidate>
+ 
+ <div class="form-group" ng-class="{'has-error has-feedback' : (myForm.fullname.$error.required) && (!myForm.fullname.$pristine) } ">
+ <label class="col-xs-12 col-sm-3 col-sm-push-2 control-label">Full Name</label>
+ 	<div class="col-sm-3 col-xs-12 col-sm-push-2">
+ 		<input type="text" name="fullname" ng-model="feedback.fullname" class="form-control" required="true" >
+ 		<span class="help-block" class="glyphicon glyphicon-remove form-control-feedback" ng-show="(myForm.fullname.$error.required) && (!myForm.fullname.$pristine)" style="color: red;">Incorrect details</span>
+ 	</div>
+ </div>
+
+ <div class="form-group" ng-class="{'has-error has-feedback' :  (!myForm.email.$pristine) && (myForm.email.$invalid)} ">
+ <label class="col-xs-12 col-sm-3 col-sm-push-2 control-label">Email</label>
+ 	<div class="col-sm-3 col-xs-12 col-sm-push-2">
+ 		<input type="email" name="email" ng-model="feedback.email" class="form-control" required="true" >
+ 		<span class="help-block" class="glyphicon glyphicon-remove form-control-feedback" ng-show="(myForm.email.$error.required ) && (!myForm.email.$pristine) " style="color: red;">
+ 		<span ng-show="(myForm.email.$invalid) || (myForm.email.$error.required ) && (!myForm.email.$pristine)  "> </span>Incorrect details</span>
+ 	</div>
+ </div>
+
+ <div class="form-group" ng-class="{'has-error has-feedback' : myForm.message.$error.required && !myForm.message.$pristine} ">
+ <label class="col-xs-12 col-sm-3 col-sm-push-2 control-label">Message</label>
+ 	<div class="col-sm-3 col-xs-12 col-sm-push-2">
+ 		<textarea class="form-control" ng-model="feedback.message" rows="5" name="message" required="true"></textarea>
+ 		<span class="help-block" class="glyphicon glyphicon-remove form-control-feedback" ng-show="(myForm.message.$error.required) && (!myForm.message.$pristine)" style="color: red;">Incorrect details</span>
+ 	</div>
+ </div>
+
+<div class="form-group">
+<div class="col-sm-3 col-xs-12 col-sm-push-5">
+	<button type="submit" class="btn btn-success" ng-disabled="myForm.$invalid">Submit</button>
+</div>
+</div>
+
+
+
+
+
+</form>
+</div>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+
+
+
+<div class="container-fluid "  ng-controller="aboutCtrl">
+
+
+<div style="padding: 70px;">
+<!---our history---->
+<div class="row row-content">
+<div class="col-sm-9 col-xs-12 ">
+<div class=" panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Our History</h3>
+	</div>
+	<div class="panel-body">
+		<div class="media" style="padding: 30px;">
+			<div class="media-left">
+				<img src="image/background.jpg" style="width: 100px;" class="media-object img-circle">
+			</div>
+			<div class="media-body">
+				<h2 class="media-heading">Baking House</h2>
+				<p style="padding: 10px;"></p>
+				<p>Baking House was founded by Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="row row-content">
+<div class="col-sm-9 col-xs-12 ">
+
+<!---Panel for chefs---->
+<div class="panel panel-default">
+	<div class="panel-heading">
+	<h1 class="panel-title">Straight from the Horses mouth</h1>
+	</div>
+	<div class="panel-body" ng-repeat="chef in chefs">
+		<div class="media"  style="padding: 30px;">
+		<div class="media-left">
+			<img src="{{chef.image}} " style="width: 100px;" class="img-circle">
+		</div>
+		<div class="media-body">
+		<h4 class="media-heading">{{chef.name}} <small class="label label-success label-sm">{{chef.designation}}</small></h4>
+			<p>{{chef.description}}</p>
+		</div>
+			
+		</div>
+		<hr>
+	</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="row row-content">
+	<div class="col-sm-9 col-xs-12 ">
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<h2 class="panel-title">Sales</h2>
+	</div>
+	<div class="panel-body">
+	<table class="table table-striped table-hover ">
+		<thead>
+			<th>Year</th>
+			<th>Sales</th>
+		</thead>
+		<tbody>
+		<tr>
+			<td>2010</td>
+			<td>20%</td>
+		</tr>
+		<tr>
+			<td>2011</td>
+			<td>21%</td>
+		</tr>
+		<tr>
+			<td>2012</td>
+			<td>25%</td>
+		</tr>
+		<tr>
+			<td>2013</td>
+			<td>30%</td>
+		</tr>
+		<tr>
+			<td>2014</td>
+			<td>24%</td>
+		</tr>
+		<tr>
+			<td>2015</td>
+			<td>30%</td>
+		</tr>
+		<tr>
+			<td>2016</td>
+			<td>32%</td>
+		</tr>
+
+
+
+		</tbody>
+	</table>
+	</div>
+	</div>
+	</div>
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
